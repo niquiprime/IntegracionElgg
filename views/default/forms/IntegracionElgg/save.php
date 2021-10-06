@@ -26,4 +26,3 @@ $submit = elgg_view_field(array(
     'value' => elgg_echo('save'),
 ));
 elgg_set_form_footer($submit);
-// El pepe
