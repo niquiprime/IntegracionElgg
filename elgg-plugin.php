@@ -20,10 +20,6 @@ return [
                         'path' => '/IntegracionElgg/add/{guid?}',
                         'resource' => 'IntegracionElgg/add',
                 ],
-                'all:object:blog' => [
-                        'path' => '/IntegracionElgg/all/{guid?}',
-                        'resource' => 'IntegracionElgg/all',
-                ],
                 'edit:object:blog' => [
                         'path' => '/IntegracionElgg/edit/{guid}/{revision?}',
                         'resource' => 'IntegracionElgg/edit',
