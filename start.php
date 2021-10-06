@@ -20,17 +20,17 @@ function my_blog_set_url($hook, $type, $url, $params) {
 function my_blog_page_handler($segments) {
     switch ($segments[0]) {
         case 'add':
-           echo elgg_view_resource('my_blog/add');
+           echo elgg_view_resource('IntegracionElgg/add');
            break;
 
         case 'view':
             $resource_vars['guid'] = elgg_extract(1, $segments);
-            echo elgg_view_resource('my_blog/view', $resource_vars);
+            echo elgg_view_resource('IntegracionElgg/view', $resource_vars);
             break;
 
         case 'all':
         default:
-           echo elgg_view_resource('my_blog/all');
+           echo elgg_view_resource('IntegracionElgg/all');
            break;
     }
 
