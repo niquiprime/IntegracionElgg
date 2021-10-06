@@ -27,5 +27,9 @@ return [
                                 'revision' => '\d+',
                         ],
                 ],
+                'all:object:blog' => [
+                        'path' => '/IntegracionElgg/all/{guid?}',
+                        'resource' => 'IntegracionElgg/all',
+                ],
         ],
 ];
