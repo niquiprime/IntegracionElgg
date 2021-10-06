@@ -1,4 +1,11 @@
+
 <?php
+composer require mongodb/mongodb
+require 'vendor/autoload.php';
+$connection = new MongoDB\Client('mongodb+srv://<nico>:<nico1234>@cluster0.oxwjx.mongodb.net/myFirstDatabase?retryWrites=true&w=majority');
+$collection = $connection->Elgg->test
+
+
 // get the form inputs
 $title = get_input('title');
 $body = get_input('body');
@@ -20,6 +27,7 @@ $blog->access_id = ACCESS_PUBLIC;
 $blog->owner_guid = elgg_get_logged_in_user_guid();
 
 // save to database and get id of the new my_blog
+$collection->insertOne($blog);
 $blog_guid = $blog->save();
 
 // if the my_blog was saved, we want to display the new post
